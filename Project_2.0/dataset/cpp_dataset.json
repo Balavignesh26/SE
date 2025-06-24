@@ -1,0 +1,82 @@
+{
+  "high_quality_sum": {
+    "code": "#include <iostream>\nint add(int a, int b) { return a + b; }\nint main() { int result = add(3, 4); std::cout << result; return 0; }",
+    "flattened_ast": [
+      "TRANSLATION_UNIT",
+      "FUNCTION_DECL",
+      "PARM_DECL",
+      "PARM_DECL",
+      "COMPOUND_STMT",
+      "RETURN_STMT",
+      "BINARY_OPERATOR",
+      "UNEXPOSED_EXPR",
+      "DECL_REF_EXPR",
+      "UNEXPOSED_EXPR",
+      "DECL_REF_EXPR",
+      "FUNCTION_DECL",
+      "COMPOUND_STMT",
+      "DECL_STMT",
+      "VAR_DECL",
+      "CALL_EXPR",
+      "UNEXPOSED_EXPR",
+      "DECL_REF_EXPR",
+      "INTEGER_LITERAL",
+      "INTEGER_LITERAL",
+      "RETURN_STMT",
+      "INTEGER_LITERAL"
+    ],
+    "tokenized_ast": [
+      1,
+      2,
+      0,
+      0,
+      3,
+      6,
+      7,
+      0,
+      5,
+      0,
+      5,
+      2,
+      3,
+      0,
+      16,
+      4,
+      0,
+      5,
+      0,
+      0,
+      6,
+      0
+    ],
+    "label": 1
+  },
+  "low_quality_sum": {
+    "code": "int main() {int a=3,b=4;std::cout<<a+b;return 0;}",
+    "flattened_ast": [
+      "TRANSLATION_UNIT",
+      "FUNCTION_DECL",
+      "COMPOUND_STMT",
+      "DECL_STMT",
+      "VAR_DECL",
+      "INTEGER_LITERAL",
+      "VAR_DECL",
+      "INTEGER_LITERAL",
+      "RETURN_STMT",
+      "INTEGER_LITERAL"
+    ],
+    "tokenized_ast": [
+      1,
+      2,
+      3,
+      0,
+      16,
+      0,
+      16,
+      0,
+      6,
+      0
+    ],
+    "label": 0
+  }
+}
