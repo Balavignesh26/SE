@@ -1,6 +1,6 @@
-**** Optimizing CVE Severity Prediction
+** Optimizing CVE Severity Prediction **
 
-This repository contains the implementation of our hybrid machine learning approach for **CVE (Common Vulnerabilities and Exposures) severity prediction**, combining **TF-IDF** and **DistilBERT** embeddings with an **attention-based deep learning model**.
+This repository contains the implementation of our hybrid machine learning approach for CVE (Common Vulnerabilities and Exposures) severity prediction, combining "TF-IDF" and "DistilBERT" embeddings with an "attention-based deep learning model".
 
 -- Overview -- 
 
@@ -34,18 +34,17 @@ Cybersecurity depends on the timely and accurate assessment of vulnerabilities. 
 
 -- Techniques Used --
 
-- **Natural Language Processing (NLP)**
+- Natural Language Processing (NLP)
   - TF-IDF Vectorizer
   - DistilBERT embeddings (`distilbert-base-uncased`)
-- **Deep Learning**
+- Deep Learning
   - Attention Mechanism
   - PyTorch with AdamW Optimizer
-- **Imbalance Handling**
+- Imbalance Handling
   - Class weighting (no oversampling or synthetic data)
 
 -- Dataset --
 
-- Source: [National Vulnerability Database (NVD)](https://nvd.nist.gov/)
 - Cleaned Dataset: 48,452 entries
 - Features: `CVE_ID`, `Description`, `Score`, `Severity`, etc.
 
